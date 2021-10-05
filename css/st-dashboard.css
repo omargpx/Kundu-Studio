@@ -1,0 +1,493 @@
+/*DISEÑO DE LA BARRA DE TEXTO*/
+
+html::-webkit-scrollbar-thumb {
+    background-color: #131f2c;
+    border-radius: 20px;
+    border: none;
+}
+
+html::-webkit-scrollbar-button:increment,
+html::-webkit-scrollbar-button {
+    display: none;
+}
+
+html::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+html::-webkit-scrollbar:vertical {
+    width: 0px;
+}
+
+html::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: none;
+    margin-top: 1.5%;
+}
+
+.menu {
+    align-items: center;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: -6%;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+}
+
+.logo h2 {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.logo img {
+    margin-top: 15%;
+    width: 40px;
+    height: 33px;
+    filter: contrast(102%);
+    opacity: 0.7;
+}
+
+.logo:hover {
+    filter: blur(0.8px);
+    transition: filter .3s ease-in;
+    cursor: pointer;
+}
+
+.btn-done {
+    width: 30%;
+    text-align: end;
+    margin-right: -5%;
+}
+
+.btn-done i {
+    color: white;
+    font-size: 1.3em;
+    opacity: 0.85;
+}
+
+.btn-done i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.wave {
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wave img {
+    width: 100%;
+}
+
+.resume-activitys {
+    width: 100%;
+    justify-content: center;
+    min-height: 7em;
+    margin-top: 2%;
+}
+
+.cards-resume {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 1em;
+    width: 78%;
+    height: 90%;
+    margin-left: 10%;
+    padding: 5px;
+}
+
+.card-r {
+    background-color: white;
+    padding: 15px 0 0 15px;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+.card-r:hover {
+    box-shadow: 2px 2px 14px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: transform .3s ease-in;
+    cursor: pointer;
+}
+
+.card-r h3 {
+    margin: 0 0 0.5em 0;
+    font-family: 'Georama', sans-serif;
+}
+
+.card-r i {
+    position: relative;
+    top: -40%;
+    left: 85%;
+    color: #00af09;
+}
+
+.card-r span {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -10%;
+}
+
+.menu-user {
+    position: absolute;
+    top: 8%;
+    right: 12%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 10em;
+    border-radius: .5em;
+    display: none;
+    border: 1px #ddd solid;
+    z-index: 2;
+}
+
+#menu-user {
+    display: none;
+}
+
+.menu-user a {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    font-family: 'Varela Round', sans-serif;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu-user a:hover {
+    color: #1a1631;
+    transition: color .3s ease-in;
+}
+
+.title-div {
+    padding-left: 10.5%;
+    font-family: 'Georama', sans-serif;
+    color: white;
+}
+
+.cursos {
+    width: 100%;
+    justify-content: center;
+    padding-left: 10%;
+    min-height: 23em;
+    max-height: max-content;
+}
+
+.btn-vermas {
+    position: relative;
+    width: 80%;
+    height: 2.5em;
+    text-align: center;
+}
+
+.btn-vermas button {
+    height: 100%;
+    width: 30em;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    background-color: #ddd;
+    font-family: 'Georama', sans-serif;
+    font-size: 16px;
+}
+
+.btn-vermas button:hover {
+    background: #0097dd;
+    transition: background .3s ease-in;
+    color: white;
+    cursor: pointer;
+}
+
+.grid-cursos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 1.5em;
+    row-gap: 2em;
+    padding-bottom: 1em;
+}
+
+.curso {
+    width: 100%;
+    overflow: hidden;
+    border: 1.5px #ddd solid;
+    border-radius: 1em;
+    cursor: pointer;
+    height: 18em;
+}
+
+.info-curso {
+    background-color: white;
+    margin-top: -2%;
+    position: relative;
+    width: 100%;
+    padding: 5px 0 0 5px;
+    height: 4.9em;
+}
+
+.curso:hover img {
+    transform: scale(1.05);
+    transition: transform .5s ease-in;
+}
+
+.curso:hover h4 {
+    color: #007bb4e3;
+    transition: color .3s ease-in;
+}
+
+.curso:hover h3 {
+    color: #1a1631;
+    transition: color .3s ease-in;
+}
+
+.curso img {
+    width: 100%;
+    height: 73%;
+    object-fit: cover;
+}
+
+.curso h3,
+h4 {
+    margin: 0;
+    padding: 5px 0 0 10px;
+}
+
+.curso h4 {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.curso h3 {
+    font-family: 'Georama', sans-serif;
+    color: rgb(94, 94, 94);
+}
+
+.publicaciones {
+    width: 100%;
+    padding-left: 10%;
+    height: 20em;
+    max-height: 25em;
+    overflow-y: scroll;
+}
+
+.grid-pub {
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 1em;
+}
+
+.publicacion {
+    display: grid;
+    grid-template-columns: 7% 90%;
+    column-gap: 1em;
+    background-color: rgb(235, 235, 235);
+    padding: 0 0 10px 0;
+    border-radius: 0.5em;
+    min-height: 5em;
+    overflow: hidden;
+    max-height: max-content;
+    width: 100%;
+}
+
+.mensaje {
+    padding: 5px;
+}
+
+.mensaje h4 {
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: #1a1631;
+    margin: 0;
+}
+
+.mensaje p {
+    color: grey;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.publicacion img {
+    width: 3.5em;
+    margin-left: 15%;
+    margin-top: 35%;
+}
+
+.foots {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(18, 22, 31);
+    padding: 5px;
+    justify-content: space-between;
+    display: inline-flex;
+    color: #ddd;
+}
+
+.foots>div>span {
+    padding: 0 30px 0 10px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*solo para el titulo de cursos*/
+
+@media screen and (max-width:1100px) {
+    .title-div {
+        color: #1a1631;
+    }
+}
+
+@media screen and (max-width:950px) {
+    body {
+        background-color: rgb(240, 240, 240);
+    }
+    .cards-resume {
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        row-gap: 2em;
+    }
+    .grid-pub {
+        width: 80%;
+    }
+    .publicacion {
+        display: grid;
+        grid-template-columns: 10% 85%;
+        column-gap: 1em;
+    }
+}
+
+@media screen and (max-width:780px) {
+    nav {
+        justify-content: space-around;
+    }
+    .cards-resume {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        row-gap: 2em;
+    }
+    .grid-cursos {
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+    .menu {
+        margin-left: 5%;
+    }
+    .menu img {
+        width: 5.3vw;
+        height: 5.8vw;
+        margin-top: 12%;
+    }
+    .menu h2 {
+        font-size: 3vw;
+    }
+    .btn-done {
+        margin-right: 5%;
+    }
+    .resume-activitys {
+        margin-top: 1%;
+    }
+    .grid-pub {
+        width: 80%;
+    }
+    .publicacion {
+        display: grid;
+        grid-template-columns: 10% 85%;
+        column-gap: 1em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cards-resume {
+        display: grid;
+        grid-template-columns: 96%;
+        row-gap: 2em;
+    }
+    .grid-cursos {
+        display: grid;
+        grid-template-columns: 95%;
+        row-gap: 1em;
+    }
+    .card-r span {
+        margin-left: -5%;
+    }
+    .btn-vermas {
+        width: 77%;
+        margin-top: -2%;
+    }
+    .btn-vermas button {
+        width: 100%;
+    }
+    .grid-pub {
+        width: 80%;
+    }
+    .publicacion {
+        display: grid;
+        grid-template-columns: 10% 85%;
+        column-gap: 1.5em;
+    }
+    .foots {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .resume-activitys {
+        margin-top: 0;
+    }
+    .grid-pub {
+        width: 80%;
+    }
+    .publicacion {
+        display: grid;
+        grid-template-columns: 10% 80%;
+        column-gap: 2em;
+    }
+}

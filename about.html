@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <!--google fonts - connect  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--fontsfamily-->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--icono-->
+    <!--animacion para el texto-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--as-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" href="img/kundu-circle.png">
+    <title>Kundu Studio - About Us</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+
+    <nav>
+        <div class="menu">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/kundu-Gradient.png" alt="anku">
+                    <h2 style="color: rgb(238, 238, 238);">U N D U</h2>
+                </div>
+            </a>
+            <ul class="links">
+                <li><a href="index.html#proyectos" style="color: #ddd;">PROYECTOS</a> </li>
+                <li><a href="#foot" style="color: #ddd;">SOPORTE</a></li>
+                <li><a href="#" style="color: #ddd;">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="btn-done">
+            <button onclick="openLogin()">Log in</button>
+        </div>
+    </nav>
+
+    <div class="about-fondo">
+        <img src="otros/room.jpg" alt="">
+        <div class="info-kundo">
+            <img src="img/kundu.png" alt="">
+            <h2>Kundu-Studio</h2>
+            <a href="#team-k"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+
+    <h2 class="team-title" id="team-k">Equipo</h2>
+
+    <div class="team">
+        <div class="person">
+            <img src="img/Omar.png" alt="Omar">
+            <h3>Omar Guerrero</h3>
+            <span>desarrollador e ilustrador</span>
+        </div>
+    </div>
+
+
+    <!--Login form-->
+    <div class="popup-login-form" id="popup-login">
+
+        <div class="container">
+            <div class="form-log">
+                <div class="title-log">Iniciar Sesion</div>
+                <div class="logo-kundu"><img src="img/avatar.png" alt="profile"></div>
+                <form action="#">
+
+                    <div class="data">
+                        <label>Correo</label>
+                        <input type="email">
+                    </div>
+                    <div class="data">
+                        <label>Contraseña</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="togle-adm">
+                        <label class="switch">
+                            <input type="checkbox" id="log-adm">
+                            <span class="slider round"></span>
+                          </label>
+                        <span>Administrador</span>
+                    </div>
+                    <div class="clave-adm">
+                        <input type="text" placeholder="clave">
+                    </div>
+                    <div class="end-form-login">
+                        <button type="submit">Ingresar</button>
+                        <p>¿No tienes una cuenta? <a href="#sign-in" onclick="openRegistro()">Registrate</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="wave-kivy">
+                <img src="img/asistent-log.png" alt="kivy">
+                <h3>Kundu Studio</h3>
+            </div>
+        </div>
+
+        <div class="close-popup">
+            <i class="fas fa-times" id="close-login"></i>
+        </div>
+    </div>
+    <!--end login form-->
+
+    <!--Register user form-->
+    <div class="popup-login-form" id="popup-registro">
+
+        <div class="container">
+            <div class="form-registro">
+                <div class="title-registrar">Registrar</div>
+                <form action="#">
+                    <div class="data">
+                        <label>Nombres</label>
+                        <input type="text" placeholder="karlo">
+                    </div>
+                    <div class="data">
+                        <label>Apellidos</label>
+                        <input type="text" placeholder="Gutierrez Rodriguez">
+                    </div>
+                    <div class="data-edad-country">
+                        <div class="data">
+                            <label>Edad</label>
+                            <input type="number" min="16" placeholder="+16">
+                        </div>
+                        <div class="data">
+                            <label>Departamento</label>
+                            <select class="select-css">
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Áncash">Áncash</option>
+                                <option value="Apurímac">Apurímac</option>
+                                <option value="Arequipa">Arequipa</option>
+                                <option value="Ayacucho">Ayacucho</option>
+                                <option value="Cajamarca">Cajamarca</option>
+                                <option value="Callao">Callao</option>
+                                <option value="Cusco">Cusco</option>
+                                <option value="Huancavelica">Huancavelica</option>
+                                <option value="Huánuco">Huánuco</option>
+                                <option value="Ica">Ica</option>
+                                <option value="Junín">Junín</option>
+                                <option value="La libertad">La libertad</option>
+                                <option value="Lambayeque">Lambayeque</option>
+                                <option value="Lima">Lima</option>
+                                <option value="Loreto">Loreto</option>
+                                <option value="Madre de Dios">Madre de Dios</option>
+                                <option value="Moquegua">Moquegua</option>
+                                <option value="Pasco">Pasco</option>
+                                <option value="Piura">Piura</option>
+                                <option value="Puno">Puno</option>
+                                <option value="San Martín" selected>San Martín</option>
+                                <option value="Tacna">Tacna</option>
+                                <option value="Tumbes">Tumbes</option>
+                                <option value="Ucayali">Ucayali</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <label>Correo</label>
+                        <input type="email" placeholder="user@example.com">
+                    </div>
+                    <div class="data">
+                        <label>Contraseña</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="end-form-login">
+                        <button type="submit">Registrar</button>
+                        <p>¿Ya tienes una cuenta? <a href="#log-in" onclick="openLogin()">Iniciar Sesion</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="wave-karlo">
+                <img src="img/karlo.png" alt="karlo">
+                <h3>Kundu Studio</h3>
+            </div>
+        </div>
+
+        <div class="close-popup">
+            <i class="fas fa-times" id="close-registro"></i>
+        </div>
+    </div>
+    <div class="footer" id="foot">
+        <div class="contact">
+            <div class="plataform">
+                <img src="img/kundu.png" alt="logo">
+                <h3>Kundu Studio</h3>
+            </div>
+            <div class="information">
+                <h3> <b>Información</b></h3>
+                <a href="">Sobre nosotros</a>
+                <a href="">Preguntas Frecuentes</a>
+                <a href="">Más información</a>
+                <h3><b>Source Code</b></h3>
+                <a href="https://github.com/omarguerrer/Kundu-Studio">Repositorio GitHub</a>
+            </div>
+            <div class="redes">
+                <h3> <b>Redes Sociales</b></h3>
+                <a href="">Comunidad de Discord</a>
+                <a href="">Platform en Instagram</a>
+                <a href="">Youtube</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="up">
+        <a href="#">
+            <i class="fas fa-angle-double-up"></i>
+        </a>
+    </div>
+
+    <!--end register user form-->
+    <script src="js/index.js"></script>
+    <script src="js/general.js"></script>
+</body>
+
+</html>

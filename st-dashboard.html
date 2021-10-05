@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/st-dashboard.css">
+    <!--google fonts - connect  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--fontsfamily-->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!--icono-->
+    <!--animacion para el texto-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--as-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="icon" href="img/kundu-circle.png">
+    <title>Kundu Studio - dashboard</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <a href="">
+                <div class="logo">
+                    <img src="img/kundu.png" alt="anku">
+                    <h2>U N D U</h2>
+                </div>
+            </a>
+        </div>
+        <div class="btn-done">
+            <label for="menu-user"><i class="fas fa-user"></i></label>
+            <input type="checkbox" id="menu-user">
+        </div>
+    </nav>
+
+
+    <div class="wave">
+        <img src="img/wave-k.png" alt="">
+    </div>
+
+    <div class="menu-user" id="div-user">
+        <a href=""><i class="fas fa-info-circle"></i> Información</a>
+        <a onclick="logOut()"><i class="fas fa-sign-out-alt"></i> Cerrar Sesion</a>
+    </div>
+
+    <div class="resume-activitys">
+        <div class="cards-resume">
+            <div class="card-r">
+                <h3>Mis Cursos</h3>
+                <i class="fas fa-book-open"></i>
+                <span>7</span>
+
+            </div>
+            <div class="card-r">
+                <h3>Anuncios</h3>
+                <i class="fas fa-audio-description"></i>
+                <span>2</span>
+
+            </div>
+            <div class="card-r">
+                <h3>Mis Certificados</h3>
+                <i class="fas fa-file-alt"></i>
+                <span>2</span>
+
+            </div>
+            <div class="card-r">
+                <h3>Opiniones</h3>
+                <i class="fas fa-user-friends"></i>
+                <span>dejanos tu opinión</span>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title-div">Cursos</h2>
+    <div class="cursos">
+        <div class="grid-cursos">
+
+            <div class="curso">
+                <img src="img/city.jpg" alt="">
+                <div class="info-curso">
+                    <h4>Nombre Profesor</h4>
+                    <h3>Nombre del curso</h3>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="https://images.unsplash.com/photo-1630128295920-627fb9aff5a4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="info-curso">
+                    <h4>Nombre Profesor</h4>
+                    <h3>Nombre del curso</h3>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="https://images.unsplash.com/photo-1521856729154-7118f7181af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="info-curso">
+                    <h4>Nombre Profesor</h4>
+                    <h3>Nombre del curso</h3>
+                </div>
+            </div>
+            <div class="curso">
+                <img src="img/city.jpg" alt="">
+                <div class="info-curso">
+                    <h4>Nombre Profesor</h4>
+                    <h3>Nombre del curso</h3>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="https://images.unsplash.com/photo-1630128295920-627fb9aff5a4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="info-curso">
+                    <h4>Nombre Profesor</h4>
+                    <h3>Nombre del curso</h3>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="https://images.unsplash.com/photo-1521856729154-7118f7181af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="info-curso">
+                    <h4>Nombre Profesor</h4>
+                    <h3>Nombre del curso</h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="btn-vermas">
+            <button> Ver más</button>
+        </div>
+    </div>
+
+    <h2 class="title-div" style="color: #1a1631;">Publicaciones</h2>
+    <div class="publicaciones">
+        <div class="grid-pub">
+
+            <div class="publicacion">
+                <img src="img/avatar.png" alt="">
+                <div class="mensaje">
+                    <h4>Nombre del docente</h4>
+                    <p>Acabo de subir el formato psd</p>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <img src="img/avatar.png" alt="">
+                <div class="mensaje">
+                    <h4>Nombre del docente</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque eligendi inventore fugit quibusdam </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="foots">
+        <div>
+            <span> <span style="font-family: 'Titillium Web', sans-serif;">© Kundu Studio 2021</span>| todos los derechos reservados</span>
+        </div>
+        <div><span>Estudiante <i class="far fa-users"></i></span></div>
+    </div>
+
+    <script src="js/st-dashboard.js"></script>
+</body>
+
+</html>
